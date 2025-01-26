@@ -16,11 +16,6 @@ export default function Home() {
           <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-px bg-[#F2F2F2]" />
 
           <div className="px-12 py-16 border-b border-[#F2F2F4]">
-            <div className="bg-[#F4F4F5] px-4 py-3 rounded-full inline-flex gap-4">
-              <ClerkLogo />
-              <div aria-hidden className="w-px h-6 bg-[#C7C7C8]" />
-              <NextLogo />
-            </div>
           </div>
 
           <div className="p-10 border-b border-[#F2F2F2]">
