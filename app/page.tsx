@@ -2,8 +2,8 @@ import { SignInButton, SignedIn, SignedOut } from "@clerk/nextjs"
 import { LearnMore } from "./components/learn-more"
 // import screenshotDevices from "./images/user-button@2xrl.webp"
 // import signIn from "./images/sign-in@2xrl.webp"
-import verify from "./images/verify@2xrl.webp"
-import userButton2 from "./images/user-button-2@2xrl.webp"
+// import verify from "./images/verify@2xrl.webp"
+// import userButton2 from "./images/user-button-2@2xrl.webp"
 import signUp from "./images/sign-up@2xrl.webp"
 import logo from "./images/logo.png"
 import "./home.css"
@@ -63,36 +63,6 @@ export default function Home() {
             </div>
           </div>
           <div className="flex gap-8 w-full h-[41.25rem] scale-[1.03]">
-            <div className="space-y-8 translate-y-12">
-              <Image
-                alt="Device"
-                src={signUp}
-                unoptimized
-                className="flex-none rounded-xl bg-white shadow-[0_5px_15px_rgba(0,0,0,0.08),0_15px_35px_-5px_rgba(25,28,33,0.2)] ring-1 ring-gray-950/5"
-              />
-            </div>
-            <div className="space-y-8 -translate-y-4">
-              <Image
-                alt="Device"
-                src={verify}
-                unoptimized
-                className="flex-none rounded-xl bg-white shadow-[0_5px_15px_rgba(0,0,0,0.08),0_15px_35px_-5px_rgba(25,28,33,0.2)] ring-1 ring-gray-950/5"
-              />
-              <Image
-                alt="Device"
-                src={userButton2}
-                unoptimized
-                className="flex-none rounded-xl bg-white shadow-[0_5px_15px_rgba(0,0,0,0.08),0_15px_35px_-5px_rgba(25,28,33,0.2)] ring-1 ring-gray-950/5"
-              />
-            </div>
-            <div className="space-y-8 -translate-y-[22.5rem]">
-              <Image
-                alt="Device"
-                src={screenshotDevices}
-                unoptimized
-                className="flex-none rounded-xl bg-white shadow-[0_5px_15px_rgba(0,0,0,0.08),0_15px_35px_-5px_rgba(25,28,33,0.2)] ring-1 ring-gray-950/5"
-              />
-            </div>
           </div>
         </div>
         <div className="absolute left-0 right-0 bottom-0 h-[18.75rem] bg-gradient-to-t from-white" />
