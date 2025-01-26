@@ -85,6 +85,14 @@ export default function Home() {
                 className="flex-none rounded-xl bg-white shadow-[0_5px_15px_rgba(0,0,0,0.08),0_15px_35px_-5px_rgba(25,28,33,0.2)] ring-1 ring-gray-950/5"
               />
             </div>
+            <div className="space-y-8 -translate-y-[22.5rem]">
+              <Image
+                alt="Device"
+                src={screenshotDevices}
+                unoptimized
+                className="flex-none rounded-xl bg-white shadow-[0_5px_15px_rgba(0,0,0,0.08),0_15px_35px_-5px_rgba(25,28,33,0.2)] ring-1 ring-gray-950/5"
+              />
+            </div>
           </div>
         </div>
         <div className="absolute left-0 right-0 bottom-0 h-[18.75rem] bg-gradient-to-t from-white" />
