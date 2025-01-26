@@ -16,15 +16,20 @@ export default function Home() {
           <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-px bg-[#F2F2F2]" />
 
           <div className="px-12 py-16 border-b border-[#F2F2F4]">
+            <div className="bg-[#F4F4F5] px-4 py-3 rounded-full inline-flex gap-4">
+              <ClerkLogo />
+              <NextLogo />
+            </div>
           </div>
 
           <div className="p-10 border-b border-[#F2F2F2]">
             <h1 className="text-5xl font-bold tracking-tight text-[#131316] relative">
-              PopReel
+              Auth starts here
             </h1>
 
             <p className="text-[#5E5F6E] pt-3 pb-6 max-w-[30rem] text-[1.0625rem] relative">
-              A TikTok clone project.
+              A simple and powerful Next.js template featuring authentication
+              and user management powered by Clerk.
             </p>
             <div className="relative flex gap-3">
               <SignedIn>
