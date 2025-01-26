@@ -11,7 +11,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { Footer } from "./components/footer"
 
-import { CARDS } from "./consts/cards"
 import { ClerkLogo } from "./components/clerk-logo"
 import { NextLogo } from "./components/next-logo"
 
@@ -104,7 +103,6 @@ export default function Home() {
         </div>
         <div className="absolute left-0 right-0 bottom-0 h-[18.75rem] bg-gradient-to-t from-white" />
       </main>
-      <LearnMore cards={CARDS} />
       <Footer />
     </>
   )
