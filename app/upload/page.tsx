@@ -26,7 +26,7 @@ export default function UploadPage() {
 
     try {
       // Step 1: Request a pre-signed URL from the API
-      const response = await fetch("/api/upload-url", {
+      const response = await fetch("/api/upload-url.js", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
