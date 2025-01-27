@@ -1,4 +1,3 @@
-import { UserDetails } from "../components/user-details";
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
 import { ClerkLogo } from "../components/clerk-logo";
 import { NextLogo } from "../components/next-logo";
@@ -48,7 +47,7 @@ export default async function ForYouPage() {
                 />
               </div>
             </header>
-            <UserDetails />
+            <h1>WORKING ON FOR YOU</h1>
           </div>
       </main>
     </>
