@@ -17,10 +17,10 @@ export default async function ForYouPage() {
                 <NextLogo />
                 <div aria-hidden className="w-px h-6 bg-[#C7C7C8]" />
                 <Link
-                  href="/for-you"
+                  href="/dashboard"
                   className="px-4 py-2 rounded-full bg-[#131316] text-white text-sm font-semibold"
                 >
-                  For You
+                  Dashboard
                 </Link>
               </div>
               <div className="flex items-center gap-2">
