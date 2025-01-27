@@ -5,6 +5,7 @@ import { LearnMore } from "../components/learn-more";
 import { Footer } from "../components/footer";
 import { ClerkLogo } from "../components/clerk-logo";
 import { NextLogo } from "../components/next-logo";
+import Link from "next/link"
 
 import { DASHBOARD_CARDS } from "../consts/cards";
 
@@ -19,6 +20,13 @@ export default async function DashboardPage() {
                 <ClerkLogo />
                 <div aria-hidden className="w-px h-6 bg-[#C7C7C8]" />
                 <NextLogo />
+                <div aria-hidden className="w-px h-6 bg-[#C7C7C8]" />
+                <Link
+                  href="/for-you"
+                  className="px-4 py-2 rounded-full bg-[#131316] text-white text-sm font-semibold"
+                >
+                  For You
+                </Link>
               </div>
               <div className="flex items-center gap-2">
                 <OrganizationSwitcher

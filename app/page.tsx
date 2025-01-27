@@ -35,6 +35,12 @@ export default function Home() {
                 >
                   Dashboard
                 </Link>
+                <Link
+                  href="/for-you"
+                  className="px-4 py-2 rounded-full bg-[#131316] text-white text-sm font-semibold"
+                >
+                  For You
+                </Link>
               </SignedIn>
               <SignedOut>
                 <SignInButton>
