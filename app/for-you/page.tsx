@@ -1,15 +1,11 @@
 import { UserDetails } from "../components/user-details";
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
-import { CodeSwitcher } from "../components/code-switcher";
-import { LearnMore } from "../components/learn-more";
-import { Footer } from "../components/footer";
 import { ClerkLogo } from "../components/clerk-logo";
 import { NextLogo } from "../components/next-logo";
 import Link from "next/link"
 
-import { DASHBOARD_CARDS } from "../consts/cards";
 
-export default async function DashboardPage() {
+export default async function ForYouPage() {
   return (
     <>
       <main className="max-w-[75rem] w-full mx-auto">
