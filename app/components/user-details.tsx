@@ -70,12 +70,6 @@ export function UserDetails() {
           {user.firstName && user.lastName ? (
             <h1 className="text-[1.0625rem] font-semibold relative w-full text-center">
               {user.firstName} {user.lastName}
-              <div className="absolute w-fit flex items-center gap-5 top-1/2 -translate-x-2.5 -translate-y-1/2 left-full">
-                <div className="relative">
-                  <div className="h-px bg-[#BFBFC4] w-[6.5rem]" />
-                  <div className="size-1 bg-[#BFBFC4] rotate-45 absolute right-0 top-1/2 -translate-y-1/2" />
-                </div>
-              </div>
             </h1>
           ) : (
             <div className="h-4" />
