@@ -102,16 +102,12 @@ export function UserDetails() {
 
         <div className="px-2.5 bg-[#FAFAFB] rounded-lg divide-y divide-[#EEEEF0]">
           <Row desc="Email" value={user.emailAddresses[0].emailAddress}>
-            <PointerC label="user.emailAddresses[0].emailAddress" />
           </Row>
           <Row desc="Last signed in" value={formatDate(user.lastSignInAt!)}>
-            <PointerC label="user.lastSignInAt" />
           </Row>
           <Row desc="Joined on" value={formatDate(user.createdAt!)}>
-            <PointerC label="user.createdAt" />
           </Row>
           <Row desc="User ID" value={user.id}>
-            <PointerC label="user.user.id" />
           </Row>
         </div>
         <h2 className="mt-6 mb-4 text-[0.9375rem] font-semibold">
@@ -119,22 +115,18 @@ export function UserDetails() {
         </h2>
         <div className="px-2.5 bg-[#FAFAFB] rounded-lg divide-y divide-[#EEEEF0]">
           <Row desc="Session ID" value={session.id}>
-            <PointerC label="session.id" />
           </Row>
           <Row desc="Status" value={session.status}>
-            <PointerC label="session.status" />
           </Row>
           <Row
             desc="Last active"
             value={formatDateWithNumbers(session.lastActiveAt)}
           >
-            <PointerC label="session.lastActiveAt" />
           </Row>
           <Row
             desc="Session expiration"
             value={formatDateWithNumbers(session.expireAt)}
-          >
-            <PointerC label="session.expireAt" />
+          > 
           </Row>
         </div>
         {organization ? (
@@ -144,19 +136,15 @@ export function UserDetails() {
             </h2>
             <div className="px-2.5 bg-[#FAFAFB] rounded-lg divide-y divide-[#EEEEF0]">
               <Row desc="Organization ID" value={organization.id}>
-                <PointerC label="organization.id" />
               </Row>
               <Row desc="Name" value={organization.name}>
-                <PointerC label="organization.name" />
               </Row>
               <Row desc="Members" value={String(organization.membersCount)}>
-                <PointerC label="organization.membersCount" />
               </Row>
               <Row
                 desc="Pending invitations"
                 value={String(organization.pendingInvitationsCount)}
               >
-                <PointerC label="organization.pendingInvitationsCount" />
               </Row>
             </div>
           </>
