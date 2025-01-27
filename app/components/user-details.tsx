@@ -105,13 +105,13 @@ export function UserDetails() {
             <PointerC label="" />
           </Row>
           <Row desc="Last signed in" value={formatDate(user.lastSignInAt!)}>
-            <PointerC label="user.lastSignInAt" />
+            <PointerC label="" />
           </Row>
           <Row desc="Joined on" value={formatDate(user.createdAt!)}>
-            <PointerC label="user.createdAt" />
+            <PointerC label="" />
           </Row>
           <Row desc="User ID" value={user.id}>
-            <PointerC label="user.user.id" />
+            <PointerC label="" />
           </Row>
         </div>
         <h2 className="mt-6 mb-4 text-[0.9375rem] font-semibold">
