@@ -19,20 +19,6 @@ function Row({
   );
 }
 
-function PointerC({ label }: { label: string }) {
-  return (
-    <div className="absolute w-fit flex items-center gap-5 top-1/2 -translate-y-1/2 left-full">
-      <div className="relative">
-        <div className="h-px bg-[#BFBFC4] w-[6.5rem]" />
-        <div className="size-1 bg-[#BFBFC4] rotate-45 absolute right-0 top-1/2 -translate-y-1/2" />
-      </div>
-      <div className="font-mono text-xs bg-black px-1.5 py-1 rounded-md text-white">
-        {label}
-      </div>
-    </div>
-  );
-}
-
 function formatDate(date: Date) {
   return date.toLocaleDateString("en-US", {
     month: "short",
@@ -61,7 +47,7 @@ export function UserDetails() {
   if (!user || !session) return null;
 
   return (
-    <div className="p-24 rounded-lg flex flex-col items-center border-[#EDEDED] bg-[#F1F1F2]">
+    <div className="p-16 rounded-lg flex flex-col items-center border-[#EDEDED] bg-[#F1F1F2]">
       <div className="p-8 rounded-xl bg-white shadow-[0_5px_15px_rgba(0,0,0,0.08),0_15px_35px_-5px_rgba(25,28,33,0.2)] ring-1 ring-gray-950/5 max-w-[25rem]">
         <div className="flex flex-col items-center gap-2 mb-6">
           <div className="w-full relative flex justify-center">
