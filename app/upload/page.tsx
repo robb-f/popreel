@@ -5,7 +5,7 @@ import { NextLogo } from "../components/next-logo";
 import Link from "next/link"
 
 
-export default async function ForYouPage() {
+export default async function UploadPage() {
   return (
     <>
       <main className="max-w-[75rem] w-full mx-auto">
@@ -24,10 +24,10 @@ export default async function ForYouPage() {
                 </Link>
                 <div aria-hidden className="w-px h-6 bg-[#C7C7C8]" />
                 <Link
-                  href="/upload"
+                  href="/for-you"
                   className="px-4 py-2 rounded-full bg-[#131316] text-white text-sm font-semibold"
                 >
-                  Upload
+                  For You
                 </Link>
               </div>
               <div className="flex items-center gap-2">
