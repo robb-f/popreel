@@ -75,7 +75,10 @@ export function UserDetails() {
             <div className="h-4" />
           )}
         </div>
-
+        
+        <h2 className="mt-6 mb-4 text-[0.9375rem] font-semibold">
+          User details
+        </h2>
         <div className="px-2.5 bg-[#FAFAFB] rounded-lg divide-y divide-[#EEEEF0]">
           <Row desc="Email" value={user.emailAddresses[0].emailAddress}>
           </Row>
