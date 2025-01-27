@@ -101,28 +101,40 @@ export function UserDetails() {
         </div>
 
         <div className="px-2.5 bg-[#FAFAFB] rounded-lg divide-y divide-[#EEEEF0]">
+          <Row desc="Email" value={user.emailAddresses[0].emailAddress}>
+            <PointerC label="" />
+          </Row>
+          <Row desc="Last signed in" value={formatDate(user.lastSignInAt!)}>
+            <PointerC label="" />
+          </Row>
+          <Row desc="Joined on" value={formatDate(user.createdAt!)}>
+            <PointerC label="" />
+          </Row>
+          <Row desc="User ID" value={user.id}>
+            <PointerC label="" />
+          </Row>
         </div>
         <h2 className="mt-6 mb-4 text-[0.9375rem] font-semibold">
           Session details
         </h2>
         <div className="px-2.5 bg-[#FAFAFB] rounded-lg divide-y divide-[#EEEEF0]">
           <Row desc="Session ID" value={session.id}>
-            <PointerC label="session.id" />
+            <PointerC label="" />
           </Row>
           <Row desc="Status" value={session.status}>
-            <PointerC label="session.status" />
+            <PointerC label="" />
           </Row>
           <Row
             desc="Last active"
             value={formatDateWithNumbers(session.lastActiveAt)}
           >
-            <PointerC label="session.lastActiveAt" />
+            <PointerC label="" />
           </Row>
           <Row
             desc="Session expiration"
             value={formatDateWithNumbers(session.expireAt)}
           >
-            <PointerC label="session.expireAt" />
+            <PointerC label="" />
           </Row>
         </div>
         {organization ? (
