@@ -101,9 +101,7 @@ export function UserDetails() {
         </div>
 
         <div className="px-2.5 bg-[#FAFAFB] rounded-lg divide-y divide-[#EEEEF0]">
-          <Row desc="Email" value={user.emailAddresses[0].emailAddress}>
-            <PointerC label="" />
-          </Row>
+          <Row desc="Email" value={user.emailAddresses[0].emailAddress}></Row>
           <Row desc="Last signed in" value={formatDate(user.lastSignInAt!)}>
             <PointerC label="" />
           </Row>
