@@ -1,8 +1,5 @@
 import { SignInButton, SignedIn, SignedOut } from "@clerk/nextjs"
-import signUp from "./images/sign-up@2xrl.webp"
-import logo from "./images/logo.png"
 import "./home.css"
-import Image from "next/image"
 import Link from "next/link"
 
 import { ClerkLogo } from "./components/clerk-logo"
