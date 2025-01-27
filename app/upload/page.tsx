@@ -1,3 +1,4 @@
+"use client"
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
 import { ClerkLogo } from "../components/clerk-logo";
 import { NextLogo } from "../components/next-logo";
