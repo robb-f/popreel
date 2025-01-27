@@ -5,18 +5,15 @@ import { useOrganization, useSession, useUser } from "@clerk/nextjs";
 function Row({
   desc,
   value,
-  children,
 }: {
   desc: string;
   value: string;
-  children: React.ReactNode;
 }) {
   return (
     <div className="h-[2.125rem] grid grid-cols-2 items-center relative">
       <span className="text-xs font-semibold block flex-shrink-0">{desc}</span>
       <span className="text-xs text-[#7D7D7E] font-mono block relative">
         <span className="block truncate w-full">{value}</span>
-        {children}
       </span>
     </div>
   );
@@ -99,16 +96,12 @@ export function UserDetails() {
 
         <div className="px-2.5 bg-[#FAFAFB] rounded-lg divide-y divide-[#EEEEF0]">
           <Row desc="Email" value={user.emailAddresses[0].emailAddress}>
-            <PointerC label="" />
           </Row>
           <Row desc="Last signed in" value={formatDate(user.lastSignInAt!)}>
-            <PointerC label="" />
           </Row>
           <Row desc="Joined on" value={formatDate(user.createdAt!)}>
-            <PointerC label="" />
           </Row>
           <Row desc="User ID" value={user.id}>
-            <PointerC label="" />
           </Row>
         </div>
         <h2 className="mt-6 mb-4 text-[0.9375rem] font-semibold">
@@ -116,22 +109,18 @@ export function UserDetails() {
         </h2>
         <div className="px-2.5 bg-[#FAFAFB] rounded-lg divide-y divide-[#EEEEF0]">
           <Row desc="Session ID" value={session.id}>
-            <PointerC label="" />
           </Row>
           <Row desc="Status" value={session.status}>
-            <PointerC label="" />
           </Row>
           <Row
             desc="Last active"
             value={formatDateWithNumbers(session.lastActiveAt)}
           >
-            <PointerC label="" />
           </Row>
           <Row
             desc="Session expiration"
             value={formatDateWithNumbers(session.expireAt)}
           >
-            <PointerC label="" />
           </Row>
         </div>
         {organization ? (
@@ -141,19 +130,15 @@ export function UserDetails() {
             </h2>
             <div className="px-2.5 bg-[#FAFAFB] rounded-lg divide-y divide-[#EEEEF0]">
               <Row desc="Organization ID" value={organization.id}>
-                <PointerC label="organization.id" />
               </Row>
               <Row desc="Name" value={organization.name}>
-                <PointerC label="organization.name" />
               </Row>
               <Row desc="Members" value={String(organization.membersCount)}>
-                <PointerC label="organization.membersCount" />
               </Row>
               <Row
                 desc="Pending invitations"
                 value={String(organization.pendingInvitationsCount)}
               >
-                <PointerC label="organization.pendingInvitationsCount" />
               </Row>
             </div>
           </>
