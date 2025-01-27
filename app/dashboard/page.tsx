@@ -40,9 +40,6 @@ export default async function DashboardPage() {
             </header>
             <UserDetails />
           </div>
-          <div className="pt-[3.5rem]">
-            <CodeSwitcher />
-          </div>
         </div>
       </main>
     </>
